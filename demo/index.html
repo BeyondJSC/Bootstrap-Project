@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>青春长大</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-offset-8 col-xs-4" style="margin-top:20px;">
+                    <form action="" class="form-inline" role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-sm" placeholder="搜索关键字..."><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- 导航 -->
+                <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand"></div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav text-center">
+                            <li><a href="#">本站首页</a></li>
+                            <li class="mainlevel">
+                                <a href="#">组织机构</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">团委简介</a></li>
+                                    <li><a href="#">组织机构</a></li>
+                                    <li><a href="#">学生组织</a></li>
+                                    <li><a href="#">学生社团</a></li>
+                                </ul>
+                            </li>
+                            <li class="mainlevel">
+                                <a href="#">团务资料</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">团务知识</a></li>
+                                    <li><a href="#">团发文件</a></li>
+                                    <li><a href="#">工作制度</a></li>
+                                </ul>
+                            </li>
+                            <li class="mainlevel">
+                                <a href="#">品牌创建</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">思想引领</a></li>
+                                    <li><a href="#">创新创业</a></li>
+                                    <li><a href="#">文化活动</a></li>
+                                    <li><a href="#">实践育人</a></li>
+                                    <li><a href="#">组织建设</a></li>
+                                </ul>
+                            </li>
+                            <li class="mainlevel">
+                                <a href="#">青年之家</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">场地预约</a></li>
+                                    <li><a href="#">物资借用</a></li>
+                                    <li><a href="#">第二课堂</a></li>
+                                    <li><a href="#">权益维护</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- 搜索  小屏 -->
+                <div class="search-xs col-xs-12 visible-xs">
+                    <form action="" class="form-inline" role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索关键字..."><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>     
+            <div class="row">
+                <!-- 轮播 大 -->
+                <div id="myCarousel" class="carousel slide col-xs-12">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>   
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="./images/m1.jpg" alt="First slide" class="center-block">
+                            <div class="carousel-caption">我是标题一我是标题一我是标题一</div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/m2.jpg" alt="Second slide" class="center-block">
+                            <div class="carousel-caption">我是标题二我是标题二我是标题二</div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/m3.jpg" alt="Third slide" class="center-block">
+                            <div class="carousel-caption">我是标题三我是标题三我是标题三</div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/m4.jpg" alt="Third slide" class="center-block">
+                            <div class="carousel-caption">我是标题四我是标题四我是标题四</div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/m5.jpg" alt="Third slide" class="center-block">
+                            <div class="carousel-caption">我是标题五我是标题五我是标题五</div>
+                        </div>
+                    </div>
+                        <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <script type="text/javascript">
+                    $('#myCarousel').carousel({
+                        interval:2000,
+                        pause:'hover',
+                        wrap:true
+                    })
+                </script>
+            </div>
+            <!-- 新闻 -->
+            <div class="news row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">新闻<small>News</small><span>more</span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <!-- 轮播 小 -->
+                                <div class="col-xs-12 col-sm-8 col-md-5">
+                                    <div id="myCarousel2" class="carousel slide">
+                                        <!-- 轮播（Carousel）指标 -->
+                                        <ol class="carousel-indicators" style="visibility:hidden">
+                                            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                        </ol>   
+                                        <!-- 轮播（Carousel）项目 -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="./images/news01.jpg" alt="First slide" class="center-block">
+                                            </div>
+                                            <div class="item">
+                                                <img src="./images/news02.jpg" alt="Second slide" class="center-block">
+                                            </div>
+                                            <div class="item">
+                                                <img src="./images/news03.jpg" alt="Third slide" class="center-block">
+                                            </div>
+                                        </div>
+                                            <!-- 轮播（Carousel）导航 -->
+                                        <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev" style="visibility:hidden">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next" style="visibility:hidden">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                    <ul class="pic_title">
+                                        <li class="hover">
+                                            <a href="#"><img src="./images/news01.jpg" alt="" class="hidden-xs hidden-sm"><p>医学部师生参加荆州市遗体和人体器官捐献者缅怀仪式</p></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="./images/news02.jpg" alt="" class="hidden-xs hidden-sm"><p>我校师生参加“青年红色筑梦之旅”活动营</p></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="./images/news03.jpg" alt="" class="hidden-xs hidden-sm"><p>朱业宏参加组织统战部支部3月“主题党会”</p></a>
+                                        </li>
+                                    </ul>  
+                                </div>
+                                <script type="text/javascript">
+                                    $('#myCarousel2').carousel({
+                                        interval:3000,
+                                        pause:'hover',
+                                        wrap:true
+                                    })
+                                    $('#myCarousel2').on('slide.bs.carousel', function(e){
+                                        var index = $(e.relatedTarget).index();
+                                        $('.pic_title li').siblings().removeClass('hover').eq(index).addClass('hover')
+                                    })
+                                </script>
+                                <div class="col-xs-12 col-sm-12 col-md-4 news_list">
+                                    <ul>
+                                        <li><a href="#">长江大学讲堂第10讲：王志伟解读我...<span>04-18</span></a></li>
+                                        <li><a href="#">长江大学讲堂第10讲：王志伟解读我...<span>04-18</span></a></li>
+                                        <li><a href="#">长江大学讲堂第10讲：王志伟解读我...<span>04-18</span></a></li>
+                                        <li><a href="#">长江大学讲堂第10讲：王志伟解读我...<span>04-18</span></a></li>
+                                        <li><a href="#">长江大学讲堂第10讲：王志伟解读我...<span>04-18</span></a></li>
+                                        <li><a href="#">长江大学讲堂第10讲：王志伟解读我...<span>04-18</span></a></li>
+                                        <li><a href="#">长江大学讲堂第10讲：王志伟解读我...<span>04-18</span></a></li>
+                                        <li><a href="#">长江大学讲堂第10讲：王志伟解读我...<span>04-18</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 通知 -->
+                <div class="notices col-xs-12 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">通知<small>Notices</small><span>more</span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="notices_list">
+                                <dl>
+                                    <dt class="col-xs-3">
+                                        <strong>22</strong>
+                                        <span>2018-3</span>
+                                    </dt>
+                                    <dd class="col-xs-9"><a href="#">关于召开2018硕士研究生招生工作会议的通知</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt class="col-xs-3">
+                                        <strong>22</strong>
+                                        <span>2018-3</span>
+                                    </dt>
+                                    <dd class="col-xs-9"><a href="#">关于召开2018硕士研究生招生工作会议的通知</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt class="col-xs-3">
+                                        <strong>22</strong>
+                                        <span>2018-3</span>
+                                    </dt>
+                                    <dd class="col-xs-9"><a href="#">关于召开2018硕士研究生招生工作会议的通知</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt class="col-xs-3">
+                                        <strong>22</strong>
+                                        <span>2018-3</span>
+                                    </dt>
+                                    <dd class="col-xs-9"><a href="#">关于召开2018硕士研究生招生工作会议的通知</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 学院 -->
+                <div class="basic col-xs-12 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">学院<small>Basic</small><span>more</span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="basic_list">
+                                <ul>
+                                    <li><a href="#"><h4><span>【管理学院】</span>管理学院成功举办“做新时代的有为青年”座谈会</h4><p>11月15日，晚上7点，管理学院于文科大楼召开以...</p></a></li>
+                                    <li><a href="#"><h4><span>【外国语学院】</span>我是标题我是标题我是标题我是标题</h4><p>我是一段描述...</p></a></li>
+                                    <li><a href="#"><h4><span>【物理与光电学院】</span>我是标题我是标题我是标题我是标题</h4><p>我是一段描述...</p></a></li>
+                                    <li><a href="#"><h4><span>【经济学院】</span>我是标题我是标题我是标题我是标题</h4><p>我是一段描述...</p></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 人物 -->
+                <div class="character col-xs-12 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">人物<small>Character</small><span>more</span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="character_list">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object" src="./images/people_01.jpg"alt="媒体对象">
+                                    </a>
+                                    <div class="media-body">
+                                        <a href="" class="media-title"><span>【长大先锋】</span>陈敏：推陈出新，敏而好学</a>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object" src="./images/people_02.jpg"alt="媒体对象">
+                                    </a>
+                                    <div class="media-body">
+                                        <a href="" class="media-title"><span>【长大先锋】</span>陈敏：推陈出新，敏而好学</a>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object" src="./images/people_03.jpg"alt="媒体对象">
+                                    </a>
+                                    <div class="media-body">
+                                        <a href="" class="media-title"><span>【长大先锋】</span>陈敏：推陈出新，敏而好学</a>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object" src="./images/people_04.jpg"alt="媒体对象">
+                                    </a>
+                                    <div class="media-body">
+                                        <a href="" class="media-title"><span>【长大先锋】</span>陈敏：推陈出新，敏而好学</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 专题 -->
+            <div class="row">
+                <div class="specials panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">专题<small>Specials</small><span>more</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="thumbnail col-xs-6 col-sm-3">
+                            <img src="./images/Specials_01.jpg" alt="通用的占位符缩略图">
+                            <div class="caption">
+                                <p class="text-center">学习宣传党的十九大精神专题</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail col-xs-6 col-sm-3">
+                            <img src="./images/Specials_02.jpg" alt="通用的占位符缩略图">
+                            <div class="caption">
+                                <p class="text-center">“两学一做”学习教育专题</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail col-xs-6 col-sm-3">
+                            <img src="./images/Specials_03.jpg" alt="通用的占位符缩略图">
+                            <div class="caption">
+                                <p class="text-center">长江大学第五届国际交叉学科论坛</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail col-xs-6 col-sm-3">
+                            <img src="./images/Specials_04.jpg" alt="通用的占位符缩略图">
+                            <div class="caption">
+                                <p class="text-center">长江大学大学生骨干培训学校</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <!-- 友情链接 -->
+        <div class="friendLink">
+            <ul>
+                <li><a href="#">长江大学主页</a></li>
+                <li class="line"></li>
+                <li><a href="#">共青团中央</a></li>
+                <li class="line"></li>
+                <li><a href="#">中国青年网</a></li>
+                <li class="line"></li>
+                <li><a href="#">湖北共青团</a></li>
+                <li class="line"></li>
+                <li><a href="#">湖北省教育厅</a></li>
+                <li class="line"></li>
+                <li><a href="#">荆州共青团</a></li>
+            </ul>
+        </div>
+        <!-- 登录入口 -->
+        <ul class="entrance">
+            <li><a href="#">[旧网站入口]</a></li>
+            <li><a href="#">[管理员入口]</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

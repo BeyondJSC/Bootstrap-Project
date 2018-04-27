@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>青春长大</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="header hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-offset-9 col-xs-3" style="margin-top:20px;">
+                    <form action="" class="form-inline" role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-sm" placeholder="搜索关键字..."><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand"></div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav text-center">
+                            <li><a href="#">本站首页</a></li>
+                            <li class="mainlevel">
+                                <a href="#">组织机构</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">团委简介</a></li>
+                                    <li><a href="#">组织机构</a></li>
+                                    <li><a href="#">学生组织</a></li>
+                                    <li><a href="#">学生社团</a></li>
+                                </ul>
+                            </li>
+                            <li class="mainlevel">
+                                <a href="#">团务资料</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">团务知识</a></li>
+                                    <li><a href="#">团发文件</a></li>
+                                    <li><a href="#">工作制度</a></li>
+                                </ul>
+                            </li>
+                            <li class="mainlevel">
+                                <a href="#">品牌创建</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">思想引领</a></li>
+                                    <li><a href="#">创新创业</a></li>
+                                    <li><a href="#">文化活动</a></li>
+                                    <li><a href="#">实践育人</a></li>
+                                    <li><a href="#">组织建设</a></li>
+                                </ul>
+                            </li>
+                            <li class="mainlevel">
+                                <a href="#">青年之家</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">场地预约</a></li>
+                                    <li><a href="#">物资借用</a></li>
+                                    <li><a href="#">第二课堂</a></li>
+                                    <li><a href="#">权益维护</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="search-xs col-xs-12 visible-xs">
+                    <form action="" class="form-inline" role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索关键字..."><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>     
+            <!-- 搜索页内容区 -->
+            <div class="row">
+                <div class="content panel panel-default">
+                    <div class="panel-heading clearfix">
+                        <div class="position col-xs-12 col-sm-6">
+                            <ul>
+                                <li><a href="#">当前位置：</a></li>
+                                <li><a href="#">首页</a></li>
+                                <li class="create">/</li>
+                                <li><a href="#">搜索结果</a></li>
+                                <li class="create">/</li>
+                                <li><a href="#">列表</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="show_search">
+                            <div class="serach_page">
+                                <ul>
+                                    <li><a href="#">共有15条</a></li>
+                                    <li><a href="#">首页</a></li>
+                                    <li><a href="#">上一页</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                    <li><a href="#">尾页</a></li>
+                                    <li>共有1页</li>
+                                    <li><a href="#">当前第1页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="specials panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">专题<small>Specials</small><span>more</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="thumbnail col-xs-6 col-sm-3">
+                            <img src="./images/Specials_01.jpg" alt="通用的占位符缩略图">
+                            <div class="caption">
+                                <p class="text-center">学习宣传党的十九大精神专题</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail col-xs-6 col-sm-3">
+                            <img src="./images/Specials_02.jpg" alt="通用的占位符缩略图">
+                            <div class="caption">
+                                <p class="text-center">“两学一做”学习教育专题</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail col-xs-6 col-sm-3">
+                            <img src="./images/Specials_03.jpg" alt="通用的占位符缩略图">
+                            <div class="caption">
+                                <p class="text-center">长江大学第五届国际交叉学科论坛</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail col-xs-6 col-sm-3">
+                            <img src="./images/Specials_04.jpg" alt="通用的占位符缩略图">
+                            <div class="caption">
+                                <p class="text-center">长江大学大学生骨干培训学校</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="friendLink">
+            <ul>
+                <li><a href="#">长江大学主页</a></li>
+                <li class="line"></li>
+                <li><a href="#">共青团中央</a></li>
+                <li class="line"></li>
+                <li><a href="#">中国青年网</a></li>
+                <li class="line"></li>
+                <li><a href="#">湖北共青团</a></li>
+                <li class="line"></li>
+                <li><a href="#">湖北省教育厅</a></li>
+                <li class="line"></li>
+                <li><a href="#">荆州共青团</a></li>
+            </ul>
+        </div>
+        <ul class="entrance">
+            <li><a href="#">[旧网站入口]</a></li>
+            <li><a href="#">[管理员入口]</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
